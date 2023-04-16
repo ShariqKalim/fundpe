@@ -1,0 +1,58 @@
+.success_funds_main {
+  width: 40vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.106);
+  padding: 20px;
+  background-color: white;
+}
+.success_funds_main h1 {
+  font-size: 50px;
+  font-family: "Poppins";
+}
+#successIcon {
+  width: 100px;
+  height: 100px;
+  color: rgb(56, 188, 56);
+}
+#back_home {
+  padding: 10px;
+  background-color: white;
+  border: 2px solid #cfb66e;
+  font-weight: bold;
+  font-family: "poppins";
+  cursor: pointer;
+  text-decoration: none;
+  color: #482d18;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #482d18;
+}
+#back_home:hover {
+  background: linear-gradient(to right, #8e6647, #cfb66e);
+
+  color: white;
+  border: none;
+}
+.success_funds_main p {
+  font-weight: bold;
+  font-family: "poppins";
+}
+.success_funds_main p:first-child {
+  color: red;
+}
+#request_no {
+  font-size: 20px;
+  color: #482d18;
+}
+@media only screen and (max-width: 1250px) {
+  .success_funds_main {
+    width: 80vw;
+    margin-left: 10px;
+  }
+}

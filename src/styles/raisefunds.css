@@ -1,0 +1,108 @@
+#raise {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Poppins";
+  background: linear-gradient(to right, #482d18, #cfb66e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#raise_details {
+  text-align: center;
+  font-family: "poppins";
+  font-size: 17px;
+  font-weight: bold;
+}
+.raise_form_1,
+.raise_form_2,
+.raise_form_3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.raise_form input {
+  width: 23vw;
+}
+
+.drive_link {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.raise_form textarea {
+  width: 50vw;
+  font-size: 16px;
+  font-family: "poppins";
+  font-weight: 500;
+  outline: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.raise_form button {
+  display: block;
+  margin: 30px auto 10px auto;
+  width: 300px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  background: linear-gradient(to right, #8e6647, #cfb66e);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "poppins";
+}
+
+.back_button {
+  padding: 10px;
+  background-color: white;
+  border: 2px solid #cfb66e;
+  font-weight: bold;
+  font-family: "poppins";
+  cursor: pointer;
+  text-decoration: none;
+  color: #482d18;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.back_button:hover {
+  background: linear-gradient(to right, #8e6647, #cfb66e);
+
+  color: white;
+  border: none;
+}
+@media only screen and (max-width: 1200px) {
+  .raise_form input {
+    width: 70vw;
+  }
+  .raise_form_1,
+  .raise_form_2,
+  .raise_form_3 {
+    flex-direction: column;
+  }
+  .raise_form textarea {
+    width: 97%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .raise_form {
+    margin-left: 15px;
+    width: 90vw;
+  }
+  .raise_form input {
+    width: 100%;
+  }
+  .raise_form textarea {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .raise_form {
+    width: 90vw;
+  }
+
+  .raise_form button {
+    width: 70vw;
+  }
+}

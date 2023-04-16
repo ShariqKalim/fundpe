@@ -1,0 +1,86 @@
+.view_main div {
+  width: 14vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.view_main img:first-child {
+  width: 50vw;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+.view_main img {
+  border-radius: 10px;
+}
+.view_main {
+  font-family: "poppins";
+}
+.view_main h4 {
+  padding: 10px;
+  /* border: 1px solid rgba(0, 0, 0, 0.254); */
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.093);
+  width: 100%;
+  font-size: 18px;
+  background-color: white;
+}
+.view_main h4 span {
+  font-size: 25px;
+  color: #05b708;
+}
+.view_main h3 {
+  color: #301da8;
+  font-size: 20px;
+}
+.view_main p {
+  color: rgb(158, 13, 20);
+  font-size: 18px;
+  font-weight: bold;
+}
+.view_main a {
+  margin-left: 40%;
+  color: black;
+  text-decoration: none;
+  width: 200px;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  border: 2px solid rgb(158, 135, 23);
+  background: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "poppins";
+  color: rgb(158, 135, 23);
+}
+.view_main a:hover {
+  background: linear-gradient(to right, #8e6647, #cfb66e);
+
+  color: white;
+  border: none;
+}
+@media only screen and (max-width: 1400px) {
+  .view_main div {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .view_main {
+    width: 90%;
+    margin: auto;
+  }
+
+  .view_main h4 {
+    width: 85vw;
+    /* font-size: 16px; */
+  }
+  .view_main img:first-child {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 513px) {
+  .view_main h1 {
+    font-size: 17px;
+  }
+  .view_main div {
+    width: 80%;
+  }
+}

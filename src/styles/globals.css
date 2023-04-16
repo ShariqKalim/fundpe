@@ -1,27 +1,340 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgba(241, 241, 241, 0.465);
+}
+
+.navbar {
+  margin: auto;
+  height: 10vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar img {
+  width: 200px;
+}
+.navbar_links {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.navbar_links a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.navbar_links a:hover {
+  font-weight: bold;
+}
+
+#raise_fund_button {
+  font-size: 17px;
+  font-family: "poppins";
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+#raise_fund_button:hover {
+  font-weight: bold;
+}
+/* Home */
+
+.main_home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 37vw;
+  text-align: center;
+  margin: 20px auto 0px auto;
+  width: 90vw;
+}
+.main_home h1 {
+  font-size: 100px;
+  font-family: "poppins";
+  font-weight: bolder;
+  background: linear-gradient(to right, #402e20, #cfb66e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main_home p {
+  margin-top: -30px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "poppins";
+}
+.main_home div {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+}
+.main_home a,
+#home_raise_fund_button {
+  color: black;
+  text-decoration: none;
+  width: 200px;
+  padding: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  border: 2px solid #cfb66e;
+  background: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "poppins";
+}
+.main_home a:hover {
+  background: linear-gradient(to right, #8e6647, #cfb66e);
+
+  color: white;
+  border: none;
+}
+.main_home #home_raise_fund_button:hover {
+  background: linear-gradient(to right, #8e6647, #cfb66e);
+
+  color: white;
+  border: none;
+}
+
+/* About Us */
+
+#About {
+  width: 60vw;
+  margin: 100px auto 50px auto;
+}
+#About_heading {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Poppins";
+  background: linear-gradient(to right, #482d18, #cfb66e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#About_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#About_content p {
+  width: 50vw;
+  font-size: 16px;
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+/* Donate */
+#donate {
+  width: 80vw;
+  margin: auto;
+}
+
+.sub_donate {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#donate h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Poppins";
+  background: linear-gradient(to right, #482d18, #cfb66e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.donate_cards {
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  width: 20vw;
+  font-family: "poppins";
+  margin-bottom: 50px;
+}
+
+.progress-bar-container div {
+  display: flex;
+  align-items: center;
+}
+.progress-bar-container div img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.donate_cards h3 {
+  font-family: "Monoton";
+  font-size: 25px;
+  /* color: rgba(13, 43, 64, 0.908); */
+  background: linear-gradient(to right, #0a151bd5, #6687dbcf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#donate_funds_buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+#donate_funds_buttons button {
+  width: 100px;
+  padding: 8px;
+  background-color: white;
+  border: 2px solid #cfb66e;
+  font-weight: bold;
+  font-family: "poppins";
+  cursor: pointer;
+}
+#donate_funds_buttons button:hover {
+  background: linear-gradient(to right, #8e6647, #cfb66e);
+
+  color: white;
+  border: none;
+}
+
+/* Contact */
+
+#contact_head {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Poppins";
+  background: linear-gradient(to right, #482d18, #cfb66e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact_content {
+  display: flex;
+  margin: auto;
+  width: 80vw;
+  justify-content: space-between;
+}
+.maps {
+  width: 30vw;
+  height: 30vw;
+}
+.contact_content input {
+  width: 100%;
+  height: 30px;
+  margin: 0px 0px 30px 30px;
+  border: 1px solid rgba(128, 128, 128, 0.338);
+  padding: 10px;
+  outline: none;
+  font-size: 17px;
+  font-family: "poppins";
+}
+.contact_content textarea {
+  margin-left: 30px;
+  border: 1px solid rgba(128, 128, 128, 0.338);
+  outline: none;
+  padding: 10px;
+  font-family: "poppins";
+  width: 100%;
+}
+.contact_content button {
+  display: block;
+  margin: 30px auto 10px auto;
+  width: 300px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  background: linear-gradient(to right, #8e6647, #cfb66e);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "poppins";
+}
+#mobile {
+  width: 100%;
+}
+
+/* Footer */
+
+#copyright {
+  margin-top: 150px;
+  text-align: center;
+  font-family: "poppins";
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .navbar_links {
+    width: 90vw;
+    margin-top: 20px;
+  }
+  .navbar_links a,
+  #raise_fund_button {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .main_home h1 {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #About_content {
+    flex-direction: column;
+  }
+  #About_content p {
+    width: 60vw;
+    text-align: center;
+  }
+  .main_home h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .main_home {
+    height: 80vw;
+  }
+  .main_home div {
+    width: 60vw;
+  }
+  .main_home button {
+    margin: 10px;
+  }
+  .sub_donate {
+    flex-direction: column;
+  }
+  .donate_cards {
+    width: 80vw;
+  }
+  .contact_content {
+    flex-direction: column;
+    margin-left: -10px;
+  }
+  .maps {
+    margin: 0px 20px 20px 20px;
+    width: 90vw;
+  }
+  .form_content input,
+  #mobile {
+    width: 80vw;
+  }
+  .contact_content textarea {
+    width: 80vw;
+  }
+  .contact_content button {
+    width: 60vw;
+  }
+  #copyright {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .main_home {
+    height: 60vh;
+    margin-top: 50px;
+  }
 }
