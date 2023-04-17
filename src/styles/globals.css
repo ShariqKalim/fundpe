@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
 body {
-  background-color: rgba(241, 241, 241, 0.465);
+  background-color: white;
 }
 
 .navbar {
@@ -151,12 +151,12 @@ body {
 }
 
 .donate_cards {
-  background-color: white;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.116);
   padding: 10px;
   width: 20vw;
   font-family: "poppins";
   margin-bottom: 50px;
+  border-radius: 10px;
 }
 
 .progress-bar-container div {
@@ -174,7 +174,10 @@ body {
   font-family: "Monoton";
   font-size: 25px;
   /* color: rgba(13, 43, 64, 0.908); */
-  background: linear-gradient(to right, #0a151bd5, #6687dbcf);
+  /* background: linear-gradient(to right, #0a151bd5, #6687dbcf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background: linear-gradient(to right, #482d18, #cfb66e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -192,6 +195,7 @@ body {
   font-weight: bold;
   font-family: "poppins";
   cursor: pointer;
+  border-radius: 10px;
 }
 #donate_funds_buttons button:hover {
   background: linear-gradient(to right, #8e6647, #cfb66e);
@@ -284,6 +288,9 @@ body {
   }
 }
 @media only screen and (max-width: 850px) {
+  .navbar {
+    width: 100vw;
+  }
   #About_content {
     flex-direction: column;
   }
@@ -306,6 +313,7 @@ body {
   }
   .sub_donate {
     flex-direction: column;
+    margin-left: -10px;
   }
   .donate_cards {
     width: 80vw;
@@ -315,15 +323,15 @@ body {
     margin-left: -10px;
   }
   .maps {
-    margin: 0px 20px 20px 20px;
+    margin: 0px 20px 20px 30px;
     width: 90vw;
   }
   .form_content input,
   #mobile {
-    width: 80vw;
+    width: 85vw;
   }
   .contact_content textarea {
-    width: 80vw;
+    width: 85vw;
   }
   .contact_content button {
     width: 60vw;
@@ -336,5 +344,8 @@ body {
   .main_home {
     height: 60vh;
     margin-top: 50px;
+  }
+  .main_home a {
+    height: 15vw;
   }
 }

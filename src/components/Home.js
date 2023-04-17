@@ -27,7 +27,7 @@ const Home = () => {
           <button id="home_raise_fund_button" onClick={handleClick}>
             raise funds
           </button>
-          <a href="#donate">Donate</a>
+          <a href="#donate">Donate funds</a>
         </div>
       </div>
     </>
